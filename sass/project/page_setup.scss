@@ -6,4 +6,4 @@ $setup_font: arial;   					 		  //set font to arial
 
 @include define_hero(20px,20px,white);   		  //override defaults for hero (height,width,background)
 @include define_header(20px, yellow, black);	  //override defaults for header (padding, background, color)
-@include define_footer(20px, gold, black);
+@include define_footer(20px, none, black);     //override defaults for footer (padding, background, color)

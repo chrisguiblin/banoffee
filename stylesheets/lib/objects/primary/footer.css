@@ -17,6 +17,8 @@
   color: inherit; }
 
 .footer p {
-  font-size: 20px;
+  padding: 0;
+  margin: 0;
+  font-size: 14px;
   line-height: 1;
   color: inherit; }
