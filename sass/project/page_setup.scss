@@ -1,8 +1,9 @@
 /* EDIT THIS PAGE FOR INDIVIDUAL PROJECT SETUP */
 
-$setup_background:gold; 					  //set background to red
+$setup_background:gold; 					  	  //set background to red
 $setup_font: arial;   					 		  //set font to arial
 
 
-@include define_hero(20px,20px,white);   		  //override defaults for hero
-@include define_header(20px, yellow, black);	  //override defaults for header
+@include define_hero(20px,20px,white);   		  //override defaults for hero (height,width,background)
+@include define_header(20px, yellow, black);	  //override defaults for header (padding, background, color)
+@include define_footer(20px, gold, black);

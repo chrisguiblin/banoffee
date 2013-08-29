@@ -4,12 +4,13 @@ Syntax error: Undefined mixin 'define_hero'.
         from line 7 of sass/project/page_setup.scss
 
 2: 
-3: $setup_background:gold; 					  //set background to red
+3: $setup_background:gold; 					  	  //set background to red
 4: $setup_font: arial;   					 		  //set font to arial
 5: 
 6: 
-7: @include define_hero(20px,20px,white);   		  //override defaults for hero
-8: @include define_header(20px, yellow, black);	  //override defaults for header
+7: @include define_hero(20px,20px,white);   		  //override defaults for hero (height,width,background)
+8: @include define_header(20px, yellow, black);	  //override defaults for header (padding, background, color)
+9: @include define_footer(20px, gold, black);
 
 Backtrace:
 sass/project/page_setup.scss:7:in `define_hero'
@@ -46,4 +47,4 @@ C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.5/vendor/listen/lib/listen/adapters
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Syntax error: Undefined mixin 'define_hero'.\A         on line 7 of sass/project/page_setup.scss, in `define_hero'\A         from line 7 of sass/project/page_setup.scss\A \A 2: \A 3: $setup_background:gold; 					  //set background to red\A 4: $setup_font: arial;   					 		  //set font to arial\A 5: \A 6: \A 7: @include define_hero(20px,20px,white);   		  //override defaults for hero\A 8: @include define_header(20px, yellow, black);	  //override defaults for header"; }
+  content: "Syntax error: Undefined mixin 'define_hero'.\A         on line 7 of sass/project/page_setup.scss, in `define_hero'\A         from line 7 of sass/project/page_setup.scss\A \A 2: \A 3: $setup_background:gold; 					  	  //set background to red\A 4: $setup_font: arial;   					 		  //set font to arial\A 5: \A 6: \A 7: @include define_hero(20px,20px,white);   		  //override defaults for hero (height,width,background)\A 8: @include define_header(20px, yellow, black);	  //override defaults for header (padding, background, color)\A 9: @include define_footer(20px, gold, black);"; }
