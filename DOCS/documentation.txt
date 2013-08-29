@@ -1,0 +1,20 @@
+BANOFFEE DOCUMENTATION
+
+####
+body
+####
+main.scss defines body,
+	background = "project/page_setup.scss" > $setup_background
+	font-family = "project/page_setup.scss" > $setup_font
+	padding/margin = "project/page_setup.scss" > "sizes.scss" > mixin: no_Gaps
+	define_area
+####
+
+####
+define_area(height,width,color)
+defines the basic appearance of a basic area
+####
+
+@import "lib/classes/primary/primary.scss"; //Includes reference to all primary classes
+@import "lib/classes/ext/ext.scss"; //Includes reference to all extention classes (extending primary)
+
