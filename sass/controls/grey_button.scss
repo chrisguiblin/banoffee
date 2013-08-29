@@ -1,0 +1,22 @@
+@import "../lib/button.scss";
+
+.button
+{
+	@include button(5px);
+	background-image:linear-gradient(grey, black, white);
+	width:auto;
+}
+
+.button:hover
+{
+	@include button(0px);
+	background-image:linear-gradient(grey, black, lightgrey);
+	top:5px;	
+}
+
+.button:active
+{
+	@include button(-4px);
+	top:10px;	
+	height: $btn_height - 5px;
+}

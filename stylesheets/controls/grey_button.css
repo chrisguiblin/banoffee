@@ -1,0 +1,38 @@
+.button {
+  border-radius: 10px;
+  box-shadow: 0px 5px 2px black;
+  border: 2px solid black;
+  position: relative;
+  padding: 10px;
+  display: inline-block;
+  transition: all 0.2s;
+  height: 20px;
+  color: black;
+  background-image: linear-gradient(grey, black, white);
+  width: auto; }
+
+.button:hover {
+  border-radius: 10px;
+  box-shadow: 0px 0px 2px black;
+  border: 2px solid black;
+  position: relative;
+  padding: 10px;
+  display: inline-block;
+  transition: all 0.2s;
+  height: 20px;
+  color: black;
+  background-image: linear-gradient(grey, black, lightgrey);
+  top: 5px; }
+
+.button:active {
+  border-radius: 10px;
+  box-shadow: 0px -4px 2px black;
+  border: 2px solid black;
+  position: relative;
+  padding: 10px;
+  display: inline-block;
+  transition: all 0.2s;
+  height: 20px;
+  color: black;
+  top: 10px;
+  height: 15px; }
