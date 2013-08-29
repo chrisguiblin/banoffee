@@ -1,5 +1,9 @@
 @mixin no_Gaps
 {
 	margin: 0px;
-	padding: 0px;
+}
+
+@mixin pad($padding)
+{
+	padding: $padding;
 }

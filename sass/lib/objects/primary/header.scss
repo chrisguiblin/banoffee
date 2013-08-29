@@ -1,0 +1,43 @@
+.header
+{
+	padding: 20px;
+	
+}
+
+@mixin define_header($padding, $bg, $color)
+{
+	.header
+	{
+		padding: $padding;
+		background: $bg;
+		color: $color;
+	}
+}
+
+.header h1
+{
+	font-size: 63px;
+	line-height: 1;
+	color: inherit;
+}
+
+.header h2
+{
+	font-size: 40px;
+	line-height: 1;
+	color: inherit;
+}
+
+.header h2
+{
+	font-size: 40px;
+	line-height: 1;
+	color: inherit;
+}
+
+.header p
+{
+	font-size: 20px;
+	line-height: 1;
+	color: inherit;
+}

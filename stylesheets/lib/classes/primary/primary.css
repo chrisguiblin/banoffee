@@ -1,37 +1,4 @@
-/*
-Syntax error: Invalid CSS after "@include ": expected identifier, was ""lib/classes/ar..."
-        on line 1 of sass/lib/classes/primary/primary.scss
-
-1: @include "lib/classes/area.scss";
-
-Backtrace:
-sass/lib/classes/primary/primary.scss:1
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.5/lib/sass/scss/parser.rb:1136:in `expected'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.5/lib/sass/scss/parser.rb:1072:in `expected'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.5/lib/sass/scss/parser.rb:1067:in `tok!'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.5/lib/sass/scss/parser.rb:179:in `include_directive'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.5/lib/sass/scss/parser.rb:163:in `special_directive'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.5/lib/sass/scss/parser.rb:135:in `directive'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.5/lib/sass/scss/parser.rb:541:in `block_child'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.5/lib/sass/scss/parser.rb:531:in `block_contents'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.5/lib/sass/scss/parser.rb:70:in `stylesheet'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.5/lib/sass/scss/parser.rb:27:in `parse'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.5/lib/sass/engine.rb:342:in `_to_tree'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.5/lib/sass/engine.rb:315:in `_render'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.5/lib/sass/engine.rb:262:in `render'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.5/lib/sass/plugin/compiler.rb:341:in `update_stylesheet'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.5/lib/sass/plugin/compiler.rb:203:in `block in update_stylesheets'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.5/lib/sass/plugin/compiler.rb:201:in `each'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.5/lib/sass/plugin/compiler.rb:201:in `update_stylesheets'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.5/lib/sass/plugin/compiler.rb:299:in `block in watch'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.5/vendor/listen/lib/listen/multi_listener.rb:86:in `call'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.5/vendor/listen/lib/listen/multi_listener.rb:86:in `on_change'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.5/vendor/listen/lib/listen/multi_listener.rb:95:in `block in initialize_adapter'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.5/vendor/listen/lib/listen/adapters/polling.rb:55:in `call'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.5/vendor/listen/lib/listen/adapters/polling.rb:55:in `poll'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.5/vendor/listen/lib/listen/adapters/polling.rb:31:in `block in start'
-*/
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Syntax error: Invalid CSS after \"@include \": expected identifier, was \"\"lib/classes/ar...\"\A         on line 1 of sass/lib/classes/primary/primary.scss\A \A 1: @include \"lib/classes/area.scss\";"; }
+.area {
+  background: black;
+  height: 100px;
+  width: 100%; }

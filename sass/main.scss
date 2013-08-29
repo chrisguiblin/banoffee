@@ -1,7 +1,11 @@
+@import "lib/sizes.scss";
+
+@import "lib/objects/primary/primary.scss"; //Includes reference to all primary classes
+@import "lib/objects/ext/ext.scss"; //Includes reference to all extention classes (extending primary)
+@import "lib/classes/classes.scss";
+
 @import "controls/grey_button";
 @import "project/page_setup.scss";
-@import "lib/classes/primary/primary.scss"; //Includes reference to all primary classes
-@import "lib/classes/ext/ext.scss"; //Includes reference to all extention classes (extending primary)
 
 body
 {
@@ -10,4 +14,4 @@ body
 	@include no_Gaps; //sets padding and margin to 0
 }
 
-@include define_area(200px,100%,blue);
+

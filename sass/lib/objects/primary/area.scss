@@ -1,0 +1,12 @@
+@mixin define_area($height,$width,$bg,$color)
+{
+	background:$bg;
+	color:$color;
+	height:$height;
+	width:$width;
+}
+
+@mixin myHeader
+{
+	background:red;
+}

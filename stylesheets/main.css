@@ -1,55 +1,96 @@
-/*
-Syntax error: Invalid CSS after "@include ": expected identifier, was ""lib/classes/ar..."
-        on line 1 of sass/lib/classes/primary/primary.scss
-        from line 3 of sass/main.scss
+.header {
+  padding: 20px; }
 
-1: @include "lib/classes/area.scss";
+.header h1 {
+  font-size: 63px;
+  line-height: 1;
+  color: inherit; }
 
-Backtrace:
-sass/lib/classes/primary/primary.scss:1
-sass/main.scss:3
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.5/lib/sass/scss/parser.rb:1136:in `expected'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.5/lib/sass/scss/parser.rb:1072:in `expected'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.5/lib/sass/scss/parser.rb:1067:in `tok!'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.5/lib/sass/scss/parser.rb:179:in `include_directive'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.5/lib/sass/scss/parser.rb:163:in `special_directive'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.5/lib/sass/scss/parser.rb:135:in `directive'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.5/lib/sass/scss/parser.rb:541:in `block_child'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.5/lib/sass/scss/parser.rb:531:in `block_contents'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.5/lib/sass/scss/parser.rb:70:in `stylesheet'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.5/lib/sass/scss/parser.rb:27:in `parse'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.5/lib/sass/engine.rb:342:in `_to_tree'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.5/lib/sass/engine.rb:274:in `to_tree'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.5/lib/sass/tree/visitors/perform.rb:223:in `visit_import'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.5/lib/sass/tree/visitors/base.rb:37:in `visit'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.5/lib/sass/tree/visitors/perform.rb:98:in `visit'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.5/lib/sass/tree/visitors/base.rb:53:in `block in visit_children'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.5/lib/sass/tree/visitors/base.rb:53:in `map'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.5/lib/sass/tree/visitors/base.rb:53:in `visit_children'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.5/lib/sass/tree/visitors/perform.rb:107:in `block in visit_children'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.5/lib/sass/tree/visitors/perform.rb:119:in `with_environment'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.5/lib/sass/tree/visitors/perform.rb:106:in `visit_children'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.5/lib/sass/tree/visitors/base.rb:37:in `block in visit'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.5/lib/sass/tree/visitors/perform.rb:126:in `visit_root'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.5/lib/sass/tree/visitors/base.rb:37:in `visit'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.5/lib/sass/tree/visitors/perform.rb:98:in `visit'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.5/lib/sass/tree/visitors/perform.rb:7:in `visit'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.5/lib/sass/tree/root_node.rb:20:in `render'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.5/lib/sass/engine.rb:315:in `_render'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.5/lib/sass/engine.rb:262:in `render'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.5/lib/sass/plugin/compiler.rb:341:in `update_stylesheet'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.5/lib/sass/plugin/compiler.rb:203:in `block in update_stylesheets'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.5/lib/sass/plugin/compiler.rb:201:in `each'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.5/lib/sass/plugin/compiler.rb:201:in `update_stylesheets'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.5/lib/sass/plugin/compiler.rb:299:in `block in watch'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.5/vendor/listen/lib/listen/multi_listener.rb:86:in `call'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.5/vendor/listen/lib/listen/multi_listener.rb:86:in `on_change'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.5/vendor/listen/lib/listen/multi_listener.rb:95:in `block in initialize_adapter'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.5/vendor/listen/lib/listen/adapters/polling.rb:55:in `call'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.5/vendor/listen/lib/listen/adapters/polling.rb:55:in `poll'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.5/vendor/listen/lib/listen/adapters/polling.rb:31:in `block in start'
-*/
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Syntax error: Invalid CSS after \"@include \": expected identifier, was \"\"lib/classes/ar...\"\A         on line 1 of sass/lib/classes/primary/primary.scss\A         from line 3 of sass/main.scss\A \A 1: @include \"lib/classes/area.scss\";"; }
+.header h2 {
+  font-size: 40px;
+  line-height: 1;
+  color: inherit; }
+
+.header h2 {
+  font-size: 40px;
+  line-height: 1;
+  color: inherit; }
+
+.header p {
+  font-size: 20px;
+  line-height: 1;
+  color: inherit; }
+
+.hero {
+  padding-top: 48px;
+  padding-bottom: 48px;
+  font-size: 21px;
+  line-height: 2;
+  font-weight: 200;
+  color: inherit;
+  background-color: #EEE;
+  margin: 0 auto; }
+
+.boxer {
+  margin: 0 auto;
+  max-width: 1170px; }
+
+.button {
+  border-radius: 10px;
+  box-shadow: 0px 5px 2px black;
+  border: 2px solid black;
+  position: relative;
+  padding: 10px;
+  display: inline-block;
+  transition: all 0.2s;
+  height: 20px;
+  color: black;
+  background-image: linear-gradient(grey, black, white);
+  width: auto; }
+
+.button:hover {
+  border-radius: 10px;
+  box-shadow: 0px 0px 2px black;
+  border: 2px solid black;
+  position: relative;
+  padding: 10px;
+  display: inline-block;
+  transition: all 0.2s;
+  height: 20px;
+  color: black;
+  background-image: linear-gradient(grey, black, lightgrey);
+  top: 5px; }
+
+.button:active {
+  border-radius: 10px;
+  box-shadow: 0px -4px 2px black;
+  border: 2px solid black;
+  position: relative;
+  padding: 10px;
+  display: inline-block;
+  transition: all 0.2s;
+  height: 20px;
+  color: black;
+  top: 10px;
+  height: 15px; }
+
+/* EDIT THIS PAGE FOR INDIVIDUAL PROJECT SETUP */
+.hero {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  font-size: 21px;
+  line-height: 2;
+  font-weight: 200;
+  color: inherit;
+  background-color: white;
+  margin: 0 auto; }
+
+.header {
+  padding: 20px;
+  background: yellow;
+  color: black; }
+
+body {
+  background: gold;
+  font-family: arial;
+  margin: 0px; }

@@ -1,20 +1,19 @@
 /*
-Syntax error: Undefined mixin 'define_hero'.
-        on line 7 of sass/project/page_setup.scss, in `define_hero'
-        from line 7 of sass/project/page_setup.scss
+Syntax error: File to import not found or unreadable: lib/classes/primary/area.scss.
+              Load paths:
+                C:/wamp/www/Projects/cjgTemplate
+                C:/wamp/www/Projects/cjgTemplate/sass
+        on line 1 of sass/lib/o/primary/primary.scss
 
-2: 
-3: $setup_background:gold; 					  //set background to red
-4: $setup_font: arial;   					 		  //set font to arial
-5: 
-6: 
-7: @include define_hero(20px,20px,white);   		  //override defaults for hero
-8: @include define_header(20px, yellow, black);	  //override defaults for header
+1: @import "lib/classes/primary/area.scss";
 
 Backtrace:
-sass/project/page_setup.scss:7:in `define_hero'
-sass/project/page_setup.scss:7
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.5/lib/sass/tree/visitors/perform.rb:251:in `visit_mixin'
+sass/lib/o/primary/primary.scss:1
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.5/lib/sass/tree/import_node.rb:67:in `rescue in import'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.5/lib/sass/tree/import_node.rb:45:in `import'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.5/lib/sass/tree/import_node.rb:28:in `imported_file'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.5/lib/sass/tree/import_node.rb:37:in `css_import?'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.5/lib/sass/tree/visitors/perform.rb:215:in `visit_import'
 C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.5/lib/sass/tree/visitors/base.rb:37:in `visit'
 C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.5/lib/sass/tree/visitors/perform.rb:98:in `visit'
 C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.5/lib/sass/tree/visitors/base.rb:53:in `block in visit_children'
@@ -46,4 +45,4 @@ C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.5/vendor/listen/lib/listen/adapters
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Syntax error: Undefined mixin 'define_hero'.\A         on line 7 of sass/project/page_setup.scss, in `define_hero'\A         from line 7 of sass/project/page_setup.scss\A \A 2: \A 3: $setup_background:gold; 					  //set background to red\A 4: $setup_font: arial;   					 		  //set font to arial\A 5: \A 6: \A 7: @include define_hero(20px,20px,white);   		  //override defaults for hero\A 8: @include define_header(20px, yellow, black);	  //override defaults for header"; }
+  content: "Syntax error: File to import not found or unreadable: lib/classes/primary/area.scss.\A               Load paths:\A                 C:/wamp/www/Projects/cjgTemplate\A                 C:/wamp/www/Projects/cjgTemplate/sass\A         on line 1 of sass/lib/o/primary/primary.scss\A \A 1: @import \"lib/classes/primary/area.scss\";"; }

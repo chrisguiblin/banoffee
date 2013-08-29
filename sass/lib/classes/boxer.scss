@@ -1,0 +1,11 @@
+.boxer
+{
+	margin: 0 auto;
+	max-width: 1170px;
+}
+
+@mixin define_boxer($max)
+{
+	margin: 0 auto;
+	max-width: $max;
+}
