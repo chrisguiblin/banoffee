@@ -1,3 +1,8 @@
+.area {
+  color: black;
+  padding: 20px;
+  margin: 0; }
+
 .header {
   padding: 20px; }
 
@@ -45,3 +50,23 @@
   font-size: 14px;
   line-height: 1;
   color: inherit; }
+
+.hero {
+  padding-top: 48px;
+  padding-bottom: 48px;
+  font-size: 21px;
+  line-height: 2;
+  font-weight: 200;
+  color: inherit;
+  background-color: #EEE;
+  margin: 0 auto; }
+
+.box {
+  padding-top: 48px;
+  padding-bottom: 48px;
+  font-size: 21px;
+  line-height: 2;
+  font-weight: 200;
+  color: inherit;
+  background-color: #EEE;
+  margin: 0 auto; }

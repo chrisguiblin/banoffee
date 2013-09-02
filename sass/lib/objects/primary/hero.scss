@@ -1,0 +1,27 @@
+.hero
+{
+	padding-top: 48px;
+	padding-bottom: 48px;
+	font-size: 21px;
+	line-height:2;
+	font-weight:200;
+	color:inherit;
+	background-color:#EEE;
+	margin:0 auto;
+}
+
+@mixin define_hero($padding_top, $padding_btm, $bg)
+{
+	.hero
+	{
+		padding-top: $padding_top;
+		padding-bottom: $padding_btm;
+		font-size: 21px;
+		line-height:2;
+		font-weight:200;
+		color:inherit;
+		background-color:$bg;
+		margin:0 auto;
+	}
+}
+

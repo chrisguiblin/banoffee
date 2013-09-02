@@ -1,0 +1,14 @@
+.round
+{
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+}
+	
+@mixin define_round($radius)
+{
+	.round
+	{
+		-moz-border-radius: $radius;
+		border-radius: $radius;
+	}
+}

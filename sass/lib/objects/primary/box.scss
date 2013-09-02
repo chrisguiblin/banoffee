@@ -1,0 +1,26 @@
+.box
+{
+	padding-top: 48px;
+	padding-bottom: 48px;
+	font-size: 21px;
+	line-height:2;
+	font-weight:200;
+	color:inherit;
+	background-color:#EEE;
+	margin:0 auto;
+}
+
+@mixin define_box($padding, $bg, $color)
+{
+	.box
+	{
+		padding:$padding;
+		font-size: 21px;
+		line-height:2;
+		font-weight:200;
+		color:$color;
+		background:$bg;
+		margin:0 auto;
+	}
+}
+

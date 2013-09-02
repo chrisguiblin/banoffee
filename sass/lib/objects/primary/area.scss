@@ -1,12 +1,16 @@
-@mixin define_area($height,$width,$bg,$color)
+.area
+{
+	color:black;
+	padding:20px;
+	margin:0;
+}
+
+@mixin define_area($height:100px,$width:100px,$bg:white,$color:black,$padding:20px,$margin:0px)
 {
 	background:$bg;
 	color:$color;
 	height:$height;
 	width:$width;
-}
-
-@mixin myHeader
-{
-	background:red;
+	padding:$padding;
+	margin:$margin;
 }

@@ -1,0 +1,8 @@
+@import "lib/classes/shadow.scss";
+
+
+.inner_box
+{
+	$h:6px;$v:6px; $blur:10px; $spread:-4px; $color:rgba(0, 0, 0, 0.29); $inset:inset;
+	@include add_shadow($h, $v, $blur, $spread, $color, $inset);
+}

@@ -10,7 +10,10 @@ Syntax error: Undefined mixin 'define_hero'.
 6: 
 7: @include define_hero(20px,20px,white);   		  //override defaults for hero (height,width,background)
 8: @include define_header(20px, yellow, black);	  //override defaults for header (padding, background, color)
-9: @include define_footer(20px, none, black);     //override defaults for footer (padding, background, color)
+9: @include define_footer(20px, none, black);        //override defaults for footer (padding, background, color)
+10: @include define_box(20px, lightgrey, black);           //etc
+11: @include define_round(6px);
+12: @include define_shadow(6px,6px);
 
 Backtrace:
 sass/project/page_setup.scss:7:in `define_hero'
@@ -47,4 +50,4 @@ C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.5/vendor/listen/lib/listen/adapters
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Syntax error: Undefined mixin 'define_hero'.\A         on line 7 of sass/project/page_setup.scss, in `define_hero'\A         from line 7 of sass/project/page_setup.scss\A \A 2: \A 3: $setup_background:gold; 					  	  //set background to red\A 4: $setup_font: arial;   					 		  //set font to arial\A 5: \A 6: \A 7: @include define_hero(20px,20px,white);   		  //override defaults for hero (height,width,background)\A 8: @include define_header(20px, yellow, black);	  //override defaults for header (padding, background, color)\A 9: @include define_footer(20px, none, black);     //override defaults for footer (padding, background, color)"; }
+  content: "Syntax error: Undefined mixin 'define_hero'.\A         on line 7 of sass/project/page_setup.scss, in `define_hero'\A         from line 7 of sass/project/page_setup.scss\A \A 2: \A 3: $setup_background:gold; 					  	  //set background to red\A 4: $setup_font: arial;   					 		  //set font to arial\A 5: \A 6: \A 7: @include define_hero(20px,20px,white);   		  //override defaults for hero (height,width,background)\A 8: @include define_header(20px, yellow, black);	  //override defaults for header (padding, background, color)\A 9: @include define_footer(20px, none, black);        //override defaults for footer (padding, background, color)\A 10: @include define_box(20px, lightgrey, black);           //etc\A 11: @include define_round(6px);\A 12: @include define_shadow(6px,6px);"; }

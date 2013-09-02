@@ -15,6 +15,14 @@ define_area(height,width,color)
 defines the basic appearance of a basic area
 ####
 
-@import "lib/classes/primary/primary.scss"; //Includes reference to all primary classes
-@import "lib/classes/ext/ext.scss"; //Includes reference to all extention classes (extending primary)
+Objects are physical items, which have a physical appearance, where as classes are styles etc
 
+@import "lib/objects/primary/primary.scss"; //Includes reference to all primary classes
+@import "lib/objects/ext/ext.scss"; //Includes reference to all extention classes (extending primary)
+
+
+Classes
+-------
+boxer
+	This is simply an area which fits in the middle by putting margin:0 auto and setting a max-width of 1170
+	User mixin define_boxer(max_width) to override default
