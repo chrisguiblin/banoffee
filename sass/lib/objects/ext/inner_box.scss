@@ -1,8 +1,20 @@
-@import "lib/classes/shadow.scss";
+@import "sass/lib/classes/shadow.scss";
 
 
 .inner_box
 {
-	$h:6px;$v:6px; $blur:10px; $spread:-4px; $color:rgba(0, 0, 0, 0.29); $inset:inset;
-	@include add_shadow($h, $v, $blur, $spread, $color, $inset);
+	$h:6px;$v:6px; $blur:10px; $spread:-4px; $col:rgba(0, 0, 0, 0.29); $inset:inset;
+	background:white;
+	@include add_shadow($h, $v, $blur, $spread, $col, $inset);
+}
+
+@mixin define_inner_box($bg,$color)
+{
+	.inner_box
+	{
+		$h:6px;$v:6px; $blur:10px; $spread:-4px; $col:rgba(0, 0, 0, 0.29); $inset:inset;
+		background:$bg;
+		color:$color;
+		@include add_shadow($h, $v, $blur, $spread, $col, $inset);
+	}
 }

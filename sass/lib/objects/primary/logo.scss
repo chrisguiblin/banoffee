@@ -1,0 +1,19 @@
+.logo
+{
+	height: 100px;
+	width: 100px;
+	float:left;
+	background-size:100%;
+}
+
+@mixin define_Logo($height:100px,$width:100px,$float:left,$stretch:100%)
+{
+	.logo
+	{
+		background-image: $setup_logo;				//$setup_logo defined in page_setup.scss
+		height: $height;
+		width: $width;
+		float:$float;
+		background-size:$stretch;
+	}
+}

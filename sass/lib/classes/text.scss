@@ -1,0 +1,7 @@
+@mixin set_Text($padding:10px, $color:black, $font-size:20px, $font: inherit)
+{
+	padding:$padding;
+	color:$color;
+	font-size:$font-size;
+	font-family:$font;
+}

@@ -1,0 +1,14 @@
+//Chris Guiblin 2013
+//03.09.13
+
+//centerH
+//
+//Centres the text (when text is on a single line) to the remaining width in the parent, after taking the space for the logo away
+
+//Returns string
+
+@function centerH($image_width, $parent_width)
+{
+	$centerH_Width: $parent_width  - $image_width;
+	@return $centerH_Width;
+}

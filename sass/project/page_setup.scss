@@ -1,12 +1,33 @@
 /* EDIT THIS PAGE FOR INDIVIDUAL PROJECT SETUP */
 
-$setup_background:gold; 					  	  //set background to red
-$setup_font: arial;   					 		  //set font to arial
 
+$setup_logo: url("../images/logo1.png");			  		//Set the logo image to a file logo.png in images folder
+$setup_background: gold; 					  	  			//set background to red
+$setup_font: arial;   					 		  			//set font to arial
 
-@include define_hero(20px,20px,white);   		  //override defaults for hero (height,width,background)
-@include define_header(20px, yellow, black);	  //override defaults for header (padding, background, color)
-@include define_footer(20px, none, black);        //override defaults for footer (padding, background, color)
-@include define_box(20px, lightgrey, black);           //etc
-@include define_round(6px);
-@include define_shadow(6px,6px);
+//SETUP OPTIONS
+	$logo_height:200px;
+	$logo_width:200px;
+	$page_maxWidth:1170px;
+	$header_textSize:60px;
+
+//OVERRIDES
+	//HEADER	
+	@include define_Logo($logo_height,$logo_width);
+	@include define_header_text(auto, auto, $header_textSize, inherit);	
+	@include vAlign_header;	 								// sass/lib/calc/centerV.scss, sass/lib/objects/primary/header
+	@include hAlign_header;					 				// sass/lib/calc/centerH.scss, sass/lib/objects/primary/header
+	
+	//BODY
+	@include define_hero(20px,20px,#EBBC00);   		  		//override defaults for hero (height,width,background)
+	@include define_box(20px, lightgrey, black);            //etc
+	
+	//FOOTER
+	@include define_footer(20px, none, black);        		//override defaults for footer (padding, background, color)
+		
+	//CLASSES
+	@include define_round(6px);
+	@include define_shadow(6px,6px);	
+	@include define_inner_box(#BD6200,#530000);	
+	@include define_boxer($page_maxWidth);
+	

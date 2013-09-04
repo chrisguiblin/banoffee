@@ -1,0 +1,30 @@
+<html>
+<link href="stylesheets/main.css" rel="stylesheet" type="text/css">
+
+<div class = "header area">
+	<div class = "boxer padded area"><!--Keeps box central-->
+		<div class = "logo"></div><!--Define the logo location in sass/project/page_setup.scss-->
+		<h1>Welcome to banoffee v0.3</h1>
+	</div>
+</div>
+
+<div class = "hero area">
+	<div class = "boxer area">		
+		
+		<h1>Latest Updates</h1> <!--Main Title-->
+		
+		<div class = "container">
+			<h2>Smart Header</h2> <!--Content Title-->
+			<h3>The new smart header allows for the header to adapt around the logo</h3> <!--Content Tag Line-->
+			
+			<p>Assuming the text within the 'h1' tag in the header is on a single line, it will alter it's horizontal and vertical positioning based on the height and width of the logo.  The text will automatically position itself vertically at half the logo's height (also taking into concideration the text size), and horizontally positioned to be the width of the page_maxWidth variable, minus the width of the logo, and centrally aligned to sit in the middle.</p> <!--Content Body-->
+			<p>This feature can be enabled by adding '@include vAlign_header;' and '@include hAlign_header;' in your project's 'page_setup.scss' file.  Comment out or remove these two lines of code to disable the feature.  
+		</div>
+	</div>
+</div>
+
+<div class = "footer area">
+	<div class = "boxer area"><p>&copy; CJG Design 2013</p></div>
+</div>
+
+</html>

@@ -1,43 +1,78 @@
 .header
 {
 	padding: 20px;
-	
+	overflow: hidden;
 }
 
-@mixin define_header($padding, $bg, $color)
+.header h1, .header h2, .header h3, .header p
+{
+	float:left;	
+	line-height: 1;
+	margin: 0;
+}
+
+.header h1
+{
+	
+	color: inherit;
+}
+
+.header h2
+{
+	font-size: 40px;
+}
+
+.header h3
+{
+	font-size: 40px;
+}
+
+.header p
+{
+	font-size: 20px;
+}
+
+
+//MIXINS
+
+@mixin define_header($padding:20px, $bg:none, $color:none, $overflow:hidden)
 {
 	.header
 	{
 		padding: $padding;
 		background: $bg;
 		color: $color;
+		overflow:$overflow
 	}
 }
 
-.header h1
-{
-	font-size: 63px;
-	line-height: 1;
-	color: inherit;
+
+
+
+@mixin define_header_text($padding:10px, $color:black, $font-size:$header_textSize, $font: inherit)
+{	
+	.header h1
+	{
+		@include set_Text($padding,$color,$font-size,$font); //referenced in lib/classes/text.scss
+	}
 }
 
-.header h2
+@mixin vAlign_header()
 {
-	font-size: 40px;
-	line-height: 1;
-	color: inherit;
+	$vAlign_padding: centerV($logo_height, $header_textSize);
+	.header h1
+	{
+		padding-top: $vAlign_padding;
+		padding-bottom: $vAlign_padding;
+	}	
 }
 
-.header h2
-{
-	font-size: 40px;
-	line-height: 1;
-	color: inherit;
-}
-
-.header p
-{
-	font-size: 20px;
-	line-height: 1;
-	color: inherit;
+@mixin hAlign_header()
+{	
+	$hAlign_padding:centerH($logo_width,$page_maxWidth); 	
+	.header h1
+	{
+		width: $hAlign_padding;
+		text-align:center;
+	}	
 }

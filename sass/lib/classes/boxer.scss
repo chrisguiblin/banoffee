@@ -2,10 +2,15 @@
 {
 	margin: 0 auto;
 	max-width: 1170px;
+	overflow:hidden;
 }
 
 @mixin define_boxer($max)
 {
-	margin: 0 auto;
-	max-width: $max;
+	.boxer
+	{
+		margin: 0 auto;
+		max-width: $max;
+		overflow:hidden;
+	}
 }

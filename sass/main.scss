@@ -1,11 +1,14 @@
 @import "lib/sizes.scss";
 
-@import "lib/objects/primary/primary.scss"; //Includes reference to all primary classes
-@import "lib/objects/ext/ext.scss"; //Includes reference to all extention classes (extending primary)
-@import "lib/classes/classes.scss";
+@import "lib/objects/primary/primary.scss"; 		//Includes reference to all primary classes
+@import "lib/objects/ext/ext.scss"; 				//Includes reference to all extention objects
+@import "lib/classes/classes.scss";					//Includes reference to all classes (styles etc)
+@import "lib/calc/calc.scss";                       //Includes reference to all calculations
+@import "lib/cmd/cmd.scss";
 
 @import "controls/grey_button";
-@import "project/page_setup.scss";
+
+@import "project/page_setup.scss";					//Allows custom page setup
 
 body
 {
@@ -13,5 +16,6 @@ body
 	font-family: $setup_font;
 	@include no_Gaps; //sets padding and margin to 0
 }
+
 
 

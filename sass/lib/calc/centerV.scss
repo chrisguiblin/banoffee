@@ -1,0 +1,14 @@
+//Chris Guiblin 2013
+//03.09.13
+
+//centerV
+//
+//Centres the text (when text is on a single line) to the height of the image, by adding padding based on the size of the image and the font size
+
+//Returns string
+
+@function centerV($image_height, $font_size)
+{
+	$centerV_Padding:(($logo_height) - $header_textSize)/2;
+	@return $centerV_Padding;
+}
