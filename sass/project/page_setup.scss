@@ -1,19 +1,23 @@
 /* EDIT THIS PAGE FOR INDIVIDUAL PROJECT SETUP */
 
 
-$setup_logo: url("../images/logo1.png");			  		//Set the logo image to a file logo.png in images folder
+$setup_logo: url("../images/logo2.png");			  		//Set the logo image to a file logo.png in images folder
 $setup_background: gold; 					  	  			//set background to red
 $setup_font: arial;   					 		  			//set font to arial
 
 //SETUP OPTIONS
 	$logo_height:200px;
 	$logo_width:200px;
+	$logo_size: 240%;
+	$logo_pos_x: -140px;
+	$logo_pos_y: -30px;
+	
 	$page_maxWidth:1170px;
 	$header_textSize:60px;
 
 //OVERRIDES
 	//HEADER	
-	@include define_Logo($logo_height,$logo_width);
+	@include define_Logo($logo_height,$logo_width,"",$logo_size,$logo_pos_x,$logo_pos_y);
 	@include define_header_text(auto, auto, $header_textSize, inherit);	
 	@include vAlign_header;	 								// sass/lib/calc/centerV.scss, sass/lib/objects/primary/header
 	@include hAlign_header;					 				// sass/lib/calc/centerH.scss, sass/lib/objects/primary/header
@@ -28,6 +32,6 @@ $setup_font: arial;   					 		  			//set font to arial
 	//CLASSES
 	@include define_round(6px);
 	@include define_shadow(6px,6px);	
-	@include define_inner_box(#BD6200,#530000);	
+	@include define_inner_box(#DB9E00,#530000,50px);	
 	@include define_boxer($page_maxWidth);
 	

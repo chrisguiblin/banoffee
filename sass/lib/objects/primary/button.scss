@@ -1,11 +1,11 @@
 $btn_height:20px;
 
-@mixin button($y:0px,$speed:0.2s,$shadow_color:#000)
+@mixin button($y:0px,$speed:0.2s,$shadow_color:#000,$border:2px solid black)
 {
 	border-radius:10px;	
 	box-shadow:0px $y 2px black;
 	
-	border:2px solid black;
+	border:$border;
 	position:relative;
 	padding:10px;
 	display:inline-block;	

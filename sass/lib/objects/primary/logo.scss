@@ -6,7 +6,7 @@
 	background-size:100%;
 }
 
-@mixin define_Logo($height:100px,$width:100px,$float:left,$stretch:100%)
+@mixin define_Logo($height:100px,$width:100px,$float:left,$stretch:100%,$posX:0,$posY:0)
 {
 	.logo
 	{
@@ -15,5 +15,7 @@
 		width: $width;
 		float:$float;
 		background-size:$stretch;
+		background-position-x:$posX;
+		background-position-y:$posY;
 	}
 }

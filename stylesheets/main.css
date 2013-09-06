@@ -101,33 +101,33 @@
 .button {
   border-radius: 10px;
   box-shadow: 0px 5px 2px black;
-  border: 2px solid black;
+  border: 2px solid #5e1313;
   position: relative;
   padding: 10px;
   display: inline-block;
   transition: all 0.2s;
   height: 20px;
   color: black;
-  background-image: linear-gradient(grey, black, white);
+  background-image: linear-gradient(gold, #ffff80, white);
   width: auto; }
 
 .button:hover {
   border-radius: 10px;
   box-shadow: 0px 0px 2px black;
-  border: 2px solid black;
+  border: 2px solid #5e1313;
   position: relative;
   padding: 10px;
   display: inline-block;
   transition: all 0.2s;
   height: 20px;
   color: black;
-  background-image: linear-gradient(grey, black, lightgrey);
+  background-image: linear-gradient(gold, #ffff80, lightgrey);
   top: 5px; }
 
 .button:active {
   border-radius: 10px;
   box-shadow: 0px -4px 2px black;
-  border: 2px solid black;
+  border: 2px solid #5e1313;
   position: relative;
   padding: 10px;
   display: inline-block;
@@ -137,13 +137,21 @@
   top: 10px;
   height: 15px; }
 
+.button p {
+  padding: 0px;
+  margin: 0px;
+  position: relative;
+  top: -10px; }
+
 /* EDIT THIS PAGE FOR INDIVIDUAL PROJECT SETUP */
 .logo {
-  background-image: url("../images/logo1.png");
+  background-image: url("../images/logo2.png");
   height: 200px;
   width: 200px;
-  float: left;
-  background-size: 100%; }
+  float: "";
+  background-size: 240%;
+  background-position-x: -140px;
+  background-position-y: -30px; }
 
 .header h1 {
   padding: auto;
@@ -193,11 +201,12 @@
   -webkit-box-shadow: 6px 6px 4px 10px black ""; }
 
 .inner_box {
-  background: #bd6200;
+  background: #db9e00;
   color: #530000;
   box-shadow: 6px 6px 10px -4px rgba(0, 0, 0, 0.29) inset;
   -moz-box-shadow: 6px 6px 10px -4px rgba(0, 0, 0, 0.29) inset;
-  -webkit-box-shadow: 6px 6px 10px -4px rgba(0, 0, 0, 0.29) inset; }
+  -webkit-box-shadow: 6px 6px 10px -4px rgba(0, 0, 0, 0.29) inset;
+  height: 50px; }
 
 .boxer {
   margin: 0 auto;
@@ -208,3 +217,11 @@ body {
   background: gold;
   font-family: arial;
   margin: 0px; }
+
+a {
+  text-decoration: none;
+  color: black; }
+
+a:hover {
+  text-decoration: underline;
+  color: black; }

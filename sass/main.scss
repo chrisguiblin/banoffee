@@ -6,7 +6,7 @@
 @import "lib/calc/calc.scss";                       //Includes reference to all calculations
 @import "lib/cmd/cmd.scss";
 
-@import "controls/grey_button";
+@import "controls/yellow_button";
 
 @import "project/page_setup.scss";					//Allows custom page setup
 
@@ -17,5 +17,15 @@ body
 	@include no_Gaps; //sets padding and margin to 0
 }
 
+a
+{
+	text-decoration:none;
+	color:black;
+}
 
+a:hover
+{
+	text-decoration:underline;
+	color:black;
+}
 
