@@ -36,13 +36,14 @@
 //MIXINS
 
 @mixin define_header($padding:20px, $bg:none, $color:none, $overflow:hidden)
-{
+{	
 	.header
 	{
 		padding: $padding;
 		background: $bg;
 		color: $color;
-		overflow:$overflow
+		overflow:$overflow;
+		width:100%;
 	}
 }
 
@@ -53,6 +54,7 @@
 {	
 	.header h1
 	{
+		width:100%;
 		@include set_Text($padding,$color,$font-size,$font); //referenced in lib/classes/text.scss
 	}
 }
@@ -72,7 +74,7 @@
 	$hAlign_padding:centerH($logo_width,$page_maxWidth); 	
 	.header h1
 	{
-		width: $hAlign_padding;
+		width:$hAlign_padding;
 		text-align:center;
 	}	
 }

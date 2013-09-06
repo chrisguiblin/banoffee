@@ -154,6 +154,7 @@
   background-position-y: -30px; }
 
 .header h1 {
+  width: 100%;
   padding: auto;
   color: auto;
   font-size: 60px;
