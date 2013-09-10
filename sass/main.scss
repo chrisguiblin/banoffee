@@ -1,14 +1,15 @@
 @import "lib/sizes.scss";
 
+
 @import "lib/objects/primary/primary.scss"; 		//Includes reference to all primary classes
 @import "lib/objects/ext/ext.scss"; 				//Includes reference to all extention objects
 @import "lib/classes/classes.scss";					//Includes reference to all classes (styles etc)
 @import "lib/calc/calc.scss";                       //Includes reference to all calculations
 @import "lib/cmd/cmd.scss";
 
-@import "controls/yellow_button";
-
+@import "controls/yellow_button.scss";
 @import "project/page_setup.scss";					//Allows custom page setup
+
 
 body
 {

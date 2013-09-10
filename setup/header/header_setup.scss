@@ -1,0 +1,24 @@
+/*HEADER*/
+@mixin header_setup($use_logo:false,$logo_height:200px,$logo_width:200px,$logo_size:100%,$logo_pos_x:0px,$logo_pos_y:0px,$header_textSize:50px,$page_maxWidth:1170px)
+{
+	@if($use_logo == true) /*IF USING A LOGO*/
+	{
+		/*DEFINE THE LOGO BASED ON QUICKIES*/
+		@include define_Logo($logo_height,$logo_width,"",$logo_size,$logo_pos_x,$logo_pos_y);
+			
+		/*SETUP THE HEADER TO SIT WITH LOGO*/
+		@include define_header_text(/*padding*/0px, /*color*/inherit, /*font-size*/$header_textSize, /*font*/inherit,  /*position*/absolute);	
+		}
+	@else
+	{
+		/*SETUP THE HEADER TO WORK WITHOUT THE LOGO*/
+		@include define_header_text(/*padding*/0px, /*color*/inherit, /*font-size*/$header_textSize, /*font*/inherit,  /*position*/relative);	
+		.logo
+		{
+			display:none; /*hide the logo*/
+		}
+		$logo_width:0px;
+	}
+	@include vAlign_header($logo_height,$header_textSize);	 								// sass/lib/calc/centerV.scss, sass/lib/objects/primary/header
+	@include hAlign_header($logo_width,$page_maxWidth);		// sass/lib/calc/centerH.scss, sass/lib/objects/primary/header
+}

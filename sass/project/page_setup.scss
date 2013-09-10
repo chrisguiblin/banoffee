@@ -1,16 +1,18 @@
 /* EDIT THIS PAGE FOR INDIVIDUAL PROJECT SETUP */
 
 //QUICKIES
-$use_logo:true;
-$setup_background: gold; 					  	  			//set background to red
+$use_logo:false;
+
+$setup_background: gold; 					  	  			/*set background to red*/
 $setup_font: arial;   
 $logo_width: 200px;
-$logo_height: 200px;					 		  			//set font to arial
+$logo_height: 200px;					 		  			/*set font to arial*/
+
 
 //SETUP OPTIONS
 	
 	//SETUP LOGO
-	$setup_logo: url("../images/logo2.png");			  		//Set the logo image to a file logo.png in images folder
+	$setup_logo: url("../images/logo2.png");			  		/*Set the logo image to a file logo.png in images folder*/
 	$logo_size: 240%;
 	$logo_pos_x: -140px;
 	$logo_pos_y: -30px;
@@ -18,15 +20,6 @@ $logo_height: 200px;					 		  			//set font to arial
 	$page_maxWidth:1170px;
 	$header_textSize:60px;
 
-//OVERRIDES -- TODO, put these in a sub folder and use quickies to make changes
-	//HEADER
-	@if($use_logo == true)
-	{
-		@include define_Logo($logo_height,$logo_width,"",$logo_size,$logo_pos_x,$logo_pos_y);
-	}
-	@include define_header_text(auto, auto, $header_textSize, inherit);	
-	@include vAlign_header;	 								// sass/lib/calc/centerV.scss, sass/lib/objects/primary/header
-	@include hAlign_header;					 				// sass/lib/calc/centerH.scss, sass/lib/objects/primary/header
 	
 	//BODY
 	@include define_hero(20px,20px,#EBBC00);   		  		//override defaults for hero (height,width,background)
@@ -41,3 +34,16 @@ $logo_height: 200px;					 		  			//set font to arial
 	@include define_inner_box(#DB9E00,#530000,50px);	
 	@include define_boxer($page_maxWidth);
 	
+/*SETUP THE HEADER*/
+@import "setup/header/header_setup.scss";
+@include header_setup 
+(
+	 /*use_logo*/ 			$use_logo, 
+	 /*logo_height*/ 		$logo_height,
+	 /*logo_width*/ 		$logo_width, 
+	 /*logo_size*/  		$logo_size, 
+	 /*logo_pos_x*/ 		$logo_pos_x, 
+	 /*logo_pos_y*/ 		$logo_pos_y,
+	 /*header_textSize*/ 	$header_textSize,
+	 /*page_maxWidth*/		$page_maxWidth
+);

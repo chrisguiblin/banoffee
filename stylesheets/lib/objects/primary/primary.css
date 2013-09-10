@@ -4,27 +4,25 @@
   margin: 0; }
 
 .header {
-  padding: 20px; }
+  padding: 20px;
+  overflow: hidden; }
+
+.header h1, .header h2, .header h3, .header p {
+  float: left;
+  line-height: 1;
+  margin: 0; }
 
 .header h1 {
-  font-size: 63px;
-  line-height: 1;
   color: inherit; }
 
 .header h2 {
-  font-size: 40px;
-  line-height: 1;
-  color: inherit; }
+  font-size: 40px; }
 
-.header h2 {
-  font-size: 40px;
-  line-height: 1;
-  color: inherit; }
+.header h3 {
+  font-size: 40px; }
 
 .header p {
-  font-size: 20px;
-  line-height: 1;
-  color: inherit; }
+  font-size: 20px; }
 
 .footer {
   padding: 20px; }
@@ -70,3 +68,9 @@
   color: inherit;
   background-color: #EEE;
   margin: 0 auto; }
+
+.logo {
+  height: 100px;
+  width: 100px;
+  float: left;
+  background-size: 100%; }

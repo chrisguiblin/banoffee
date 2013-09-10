@@ -13,6 +13,9 @@
   margin: 0; }
 
 .header h1 {
+  /*Force h1 not to be pushed onto next line*/
+  display: inline;
+  position: absolute;
   color: inherit; }
 
 .header h2 {
@@ -144,30 +147,9 @@
   top: -10px; }
 
 /* EDIT THIS PAGE FOR INDIVIDUAL PROJECT SETUP */
-.logo {
-  background-image: url("../images/logo2.png");
-  height: 200px;
-  width: 200px;
-  float: "";
-  background-size: 240%;
-  background-position-x: -140px;
-  background-position-y: -30px; }
-
-.header h1 {
-  width: 100%;
-  padding: auto;
-  color: auto;
-  font-size: 60px;
-  font-family: inherit; }
-
-.header h1 {
-  padding-top: 70px;
-  padding-bottom: 70px; }
-
-.header h1 {
-  width: 970px;
-  text-align: center; }
-
+/*set background to red*/
+/*set font to arial*/
+/*Set the logo image to a file logo.png in images folder*/
 .hero {
   padding-top: 20px;
   padding-bottom: 20px;
@@ -213,6 +195,30 @@
   margin: 0 auto;
   max-width: 1170px;
   overflow: hidden; }
+
+/*SETUP THE HEADER*/
+/*HEADER*/
+/*SETUP THE HEADER TO WORK WITHOUT THE LOGO*/
+.header h1 {
+  width: 100%;
+  position: relative;
+  padding: 0px;
+  color: inherit;
+  font-size: 60px;
+  font-family: inherit;
+  /*referenced in lib/classes/text.scss*/ }
+
+.logo {
+  display: none;
+  /*hide the logo*/ }
+
+.header h1 {
+  padding-top: 70px;
+  padding-bottom: 70px; }
+
+.header h1 {
+  width: 1170px;
+  text-align: center; }
 
 body {
   background: gold;

@@ -13,6 +13,9 @@
 
 .header h1
 {
+	/*Force h1 not to be pushed onto next line*/
+	display:inline;
+	position:absolute;
 	
 	color: inherit;
 }
@@ -34,7 +37,6 @@
 
 
 //MIXINS
-
 @mixin define_header($padding:20px, $bg:none, $color:none, $overflow:hidden)
 {	
 	.header
@@ -50,16 +52,17 @@
 
 
 
-@mixin define_header_text($padding:10px, $color:black, $font-size:$header_textSize, $font: inherit)
+@mixin define_header_text($padding:10px, $color:black, $font-size:$header_textSize, $font: inherit,$position: auto)
 {	
 	.header h1
 	{
 		width:100%;
-		@include set_Text($padding,$color,$font-size,$font); //referenced in lib/classes/text.scss
+		position:$position;
+		@include set_Text($padding,$color,$font-size,$font); /*referenced in lib/classes/text.scss*/
 	}
 }
 
-@mixin vAlign_header()
+@mixin vAlign_header($logo_height,$header_textSize)
 {
 	$vAlign_padding: centerV($logo_height, $header_textSize);
 	.header h1
@@ -69,12 +72,12 @@
 	}	
 }
 
-@mixin hAlign_header()
+@mixin hAlign_header($logo_width,$page_maxWidth)
 {	
-	$hAlign_padding:centerH($logo_width,$page_maxWidth); 	
+	$hAlign_width:centerH($logo_width,$page_maxWidth); 	
 	.header h1
 	{
-		width:$hAlign_padding;
+		width:$hAlign_width;
 		text-align:center;
 	}	
 }
