@@ -198,26 +198,31 @@
 
 /*SETUP THE HEADER*/
 /*HEADER*/
-/*SETUP THE HEADER TO WORK WITHOUT THE LOGO*/
+/*DEFINE THE LOGO BASED ON QUICKIES*/
+.logo {
+  background-image: none;
+  height: 200px;
+  width: 200px;
+  float: "";
+  background-position-x: -140px;
+  background-position-y: -30px; }
+
+/*SETUP THE HEADER TO SIT WITH LOGO*/
 .header h1 {
   width: 100%;
-  position: relative;
+  position: absolute;
   padding: 0px;
   color: inherit;
   font-size: 60px;
   font-family: inherit;
   /*referenced in lib/classes/text.scss*/ }
 
-.logo {
-  display: none;
-  /*hide the logo*/ }
-
 .header h1 {
   padding-top: 70px;
   padding-bottom: 70px; }
 
 .header h1 {
-  width: 1170px;
+  width: 970px;
   text-align: center; }
 
 body {
