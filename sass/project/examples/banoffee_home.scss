@@ -2,27 +2,25 @@
 
 //QUICKIES
 $use_logo:true;
-$setup_background: white; 					  	  			/*set background to red*/
+$setup_background: gold; 					  	  			/*set background to red*/
 $setup_font: arial;   
-$logo_width: 240px;
+$logo_width: 200px;
 $logo_height: 200px;					 		  			/*set font to arial*/
-$page_maxWidth:800px;
+$page_maxWidth:500px;
 $header_textSize:40px;
-$hero_colour:#E4E4E4;
 
-@include greyButton();
 /*TODO: MOVE ALL THIS*/
 //SETUP OPTIONS
 	
 	//SETUP LOGO
-	$setup_logo: url("../images/logo.png");			  		/*Set the logo image to a file logo.png in images folder*/
+	$setup_logo: url("../images/logo2.png");			  		/*Set the logo image to a file logo.png in images folder*/
 	$logo_size: 100%;
 	$logo_pos_x: 0;
 	$logo_pos_y: 20px;
-	$logo_mode: div; /*Set to 'div' to use div element for logo, image to use img element*/
+	$logo_mode: image; /*Set to 'div' to use div element for logo*/
 	
 	//BODY
-	@include define_hero(20px,20px,$hero_colour);   		  		//override defaults for hero (height,width,background)
+	@include define_hero(20px,20px,#EBBC00);   		  		//override defaults for hero (height,width,background)
 	@include define_box(20px, lightgrey, black);            //etc
 	
 	//FOOTER
@@ -31,7 +29,7 @@ $hero_colour:#E4E4E4;
 	//CLASSES
 	@include define_round(6px);
 	@include define_shadow(6px,6px);	
-	@include define_inner_box(#C5C5C5,#530000,50px);	
+	@include define_inner_box(#DB9E00,#530000,50px);	
 	@include define_boxer($page_maxWidth);
 	
 /*SETUP THE HEADER*/

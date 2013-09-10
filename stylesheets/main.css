@@ -101,36 +101,39 @@
   -moz-border-radius: 10px;
   border-radius: 10px; }
 
+/* EDIT THIS PAGE FOR INDIVIDUAL PROJECT SETUP */
+/*set background to red*/
+/*set font to arial*/
 .button {
   border-radius: 10px;
   box-shadow: 0px 5px 2px black;
-  border: 2px solid #5e1313;
+  border: 2px solid #999999;
   position: relative;
   padding: 10px;
   display: inline-block;
   transition: all 0.2s;
   height: 20px;
   color: black;
-  background-image: linear-gradient(gold, #ffff80, white);
+  background-image: linear-gradient(#404040, #bfbfbf, white);
   width: auto; }
 
 .button:hover {
   border-radius: 10px;
   box-shadow: 0px 0px 2px black;
-  border: 2px solid #5e1313;
+  border: 2px solid #999999;
   position: relative;
   padding: 10px;
   display: inline-block;
   transition: all 0.2s;
   height: 20px;
   color: black;
-  background-image: linear-gradient(gold, #ffff80, lightgrey);
+  background-image: linear-gradient(#404040, #bfbfbf, #e6e6e6);
   top: 5px; }
 
 .button:active {
   border-radius: 10px;
   box-shadow: 0px -4px 2px black;
-  border: 2px solid #5e1313;
+  border: 2px solid #999999;
   position: relative;
   padding: 10px;
   display: inline-block;
@@ -146,12 +149,9 @@
   position: relative;
   top: -10px; }
 
-/* EDIT THIS PAGE FOR INDIVIDUAL PROJECT SETUP */
-/*set background to red*/
-/*set font to arial*/
 /*TODO: MOVE ALL THIS*/
 /*Set the logo image to a file logo.png in images folder*/
-/*Set to 'div' to use div element for logo*/
+/*Set to 'div' to use div element for logo, image to use img element*/
 .hero {
   padding-top: 20px;
   padding-bottom: 20px;
@@ -159,7 +159,7 @@
   line-height: 2;
   font-weight: 200;
   color: inherit;
-  background-color: #ebbc00;
+  background-color: #e4e4e4;
   margin: 0 auto; }
 
 .box {
@@ -186,7 +186,7 @@
   -webkit-box-shadow: 6px 6px 4px 10px black ""; }
 
 .inner_box {
-  background: #db9e00;
+  background: #c5c5c5;
   color: #530000;
   box-shadow: 6px 6px 10px -4px rgba(0, 0, 0, 0.29) inset;
   -moz-box-shadow: 6px 6px 10px -4px rgba(0, 0, 0, 0.29) inset;
@@ -195,23 +195,24 @@
 
 .boxer {
   margin: 0 auto;
-  max-width: 500px;
+  max-width: 800px;
   overflow: hidden; }
 
 /*SETUP THE HEADER*/
 /*HEADER*/
 /*DEFINE THE LOGO BASED ON QUICKIES*/
 .logo {
-  background-image: none;
+  background-image: url("../images/logo.png");
+  background-size: 100%;
   height: 200px;
-  width: 200px;
+  width: 240px;
   float: "";
   background-position-x: 0;
   background-position-y: 20px;
   background-repeat: no-repeat; }
 
 .logo .image {
-  background-image: url("../images/logo2.png"); }
+  background-image: url("../images/logo.png"); }
 
 /*SETUP THE HEADER TO SIT WITH LOGO*/
 .header h1 {
@@ -228,11 +229,11 @@
   padding-bottom: 80px; }
 
 .header h1 {
-  width: 300px;
+  width: 560px;
   text-align: center; }
 
 body {
-  background: gold;
+  background: white;
   font-family: arial;
   margin: 0px; }
 
