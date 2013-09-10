@@ -151,6 +151,7 @@
 /*set font to arial*/
 /*TODO: MOVE ALL THIS*/
 /*Set the logo image to a file logo.png in images folder*/
+/*Set to 'div' to use div element for logo*/
 .hero {
   padding-top: 20px;
   padding-bottom: 20px;
@@ -201,8 +202,7 @@
 /*HEADER*/
 /*DEFINE THE LOGO BASED ON QUICKIES*/
 .logo {
-  background-image: url("../images/logo2.png");
-  background-size: 100%;
+  background-image: none;
   height: 200px;
   width: 200px;
   float: "";

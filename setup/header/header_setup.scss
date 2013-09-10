@@ -1,10 +1,10 @@
 /*HEADER*/
-@mixin header_setup($use_logo:false,$logo_height:200px,$logo_width:200px,$logo_size:100%,$logo_pos_x:0px,$logo_pos_y:0px,$header_textSize:50px,$page_maxWidth:1170px,$logo_image:url("/images/logo.png"))
+@mixin header_setup($use_logo:false,$logo_height:200px,$logo_width:200px,$logo_size:100%,$logo_pos_x:0px,$logo_pos_y:0px,$header_textSize:50px,$page_maxWidth:1170px,$logo_image:url("/images/logo.png"),$logo_mode:image)
 {
 	@if($use_logo == true) /*IF USING A LOGO*/
 	{
 		/*DEFINE THE LOGO BASED ON QUICKIES*/
-		@include define_Logo($logo_height,$logo_width,"",$logo_size,$logo_pos_x,$logo_pos_y,'',$logo_image);
+		@include define_Logo($logo_height,$logo_width,"",$logo_size,$logo_pos_x,$logo_pos_y,$logo_mode,$logo_image);
 			
 		/*SETUP THE HEADER TO SIT WITH LOGO*/
 		@include define_header_text(/*padding*/0px, /*color*/inherit, /*font-size*/$header_textSize, /*font*/inherit,  /*position*/absolute);	

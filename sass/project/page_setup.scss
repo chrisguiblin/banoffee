@@ -17,7 +17,7 @@ $header_textSize:40px;
 	$logo_size: 100%;
 	$logo_pos_x: 0;
 	$logo_pos_y: 20px;
-
+	$logo_mode: image; /*Set to 'div' to use div element for logo*/
 	
 	//BODY
 	@include define_hero(20px,20px,#EBBC00);   		  		//override defaults for hero (height,width,background)
@@ -44,5 +44,6 @@ $header_textSize:40px;
 	 /*logo_pos_y*/ 		$logo_pos_y,
 	 /*header_textSize*/ 	$header_textSize,
 	 /*page_maxWidth*/		$page_maxWidth,
-	 /*logo image*/			$setup_logo
+	 /*logo image*/			$setup_logo,
+	 /*logo mode*/			$logo_mode
 );
