@@ -2,23 +2,21 @@
 
 //QUICKIES
 $use_logo:true;
-
 $setup_background: gold; 					  	  			/*set background to red*/
 $setup_font: arial;   
 $logo_width: 200px;
 $logo_height: 200px;					 		  			/*set font to arial*/
+$page_maxWidth:500px;
+$header_textSize:40px;
 
-
+/*TODO: MOVE ALL THIS*/
 //SETUP OPTIONS
 	
 	//SETUP LOGO
 	$setup_logo: url("../images/logo2.png");			  		/*Set the logo image to a file logo.png in images folder*/
-	$logo_size: 240%;
-	$logo_pos_x: -140px;
-	$logo_pos_y: -30px;
-	
-	$page_maxWidth:1170px;
-	$header_textSize:60px;
+	$logo_size: 100%;
+	$logo_pos_x: 0;
+	$logo_pos_y: 20px;
 
 	
 	//BODY
@@ -45,5 +43,6 @@ $logo_height: 200px;					 		  			/*set font to arial*/
 	 /*logo_pos_x*/ 		$logo_pos_x, 
 	 /*logo_pos_y*/ 		$logo_pos_y,
 	 /*header_textSize*/ 	$header_textSize,
-	 /*page_maxWidth*/		$page_maxWidth
+	 /*page_maxWidth*/		$page_maxWidth,
+	 /*logo image*/			$setup_logo
 );

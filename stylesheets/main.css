@@ -149,6 +149,7 @@
 /* EDIT THIS PAGE FOR INDIVIDUAL PROJECT SETUP */
 /*set background to red*/
 /*set font to arial*/
+/*TODO: MOVE ALL THIS*/
 /*Set the logo image to a file logo.png in images folder*/
 .hero {
   padding-top: 20px;
@@ -193,19 +194,24 @@
 
 .boxer {
   margin: 0 auto;
-  max-width: 1170px;
+  max-width: 500px;
   overflow: hidden; }
 
 /*SETUP THE HEADER*/
 /*HEADER*/
 /*DEFINE THE LOGO BASED ON QUICKIES*/
 .logo {
-  background-image: none;
+  background-image: url("../images/logo2.png");
+  background-size: 100%;
   height: 200px;
   width: 200px;
   float: "";
-  background-position-x: -140px;
-  background-position-y: -30px; }
+  background-position-x: 0;
+  background-position-y: 20px;
+  background-repeat: no-repeat; }
+
+.logo .image {
+  background-image: url("../images/logo2.png"); }
 
 /*SETUP THE HEADER TO SIT WITH LOGO*/
 .header h1 {
@@ -213,16 +219,16 @@
   position: absolute;
   padding: 0px;
   color: inherit;
-  font-size: 60px;
+  font-size: 40px;
   font-family: inherit;
   /*referenced in lib/classes/text.scss*/ }
 
 .header h1 {
-  padding-top: 70px;
-  padding-bottom: 70px; }
+  padding-top: 80px;
+  padding-bottom: 80px; }
 
 .header h1 {
-  width: 970px;
+  width: 300px;
   text-align: center; }
 
 body {

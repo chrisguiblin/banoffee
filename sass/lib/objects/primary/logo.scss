@@ -6,7 +6,7 @@
 	background-size:100%;
 }
 
-@mixin define_Logo($height:100px,$width:100px,$float:left,$stretch:100%,$posX:0,$posY:0,$mode:img)
+@mixin define_Logo($height:100px,$width:100px,$float:left,$stretch:100%,$posX:0,$posY:0,$mode:img,$logo_image:url("/images/logo.png"))
 {
 	.logo
 	{
@@ -16,7 +16,7 @@
 		}
 		@else
 		{
-			background-image: $setup_logo;				//$setup_logo defined in page_setup.scss
+			background-image: $logo_image;				//$setup_logo defined in page_setup.scss
 			background-size:$stretch;
 		}
 		height: $height;
@@ -24,5 +24,11 @@
 		float:$float;
 		background-position-x:$posX;
 		background-position-y:$posY;
+		background-repeat:no-repeat;
+	}
+	
+	.logo .image
+	{
+		background-image: $logo_image;
 	}
 }
