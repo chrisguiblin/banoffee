@@ -6,8 +6,7 @@
 	{
 		@include button(5px,0.2s,"",2px solid #5E1313);
 		background-image:linear-gradient(gold, lighten(yellow,25%), white);
-		width:auto;
-		
+		width:auto;		
 	}
 
 	.button:hover
